@@ -7,10 +7,10 @@ const box = 32;
 // load images
 
 const ground = new Image();
-ground.src = "img/ground.png";
+ground.src = "images/ground.png";
 
 const foodImg = new Image();
-foodImg.src = "img/food.png";
+foodImg.src = "images/food.png";
 
 // load audio files
 
@@ -115,9 +115,9 @@ function draw() {
             x: Math.floor(Math.random() * 17 + 1) * box,
             y: Math.floor(Math.random() * 15 + 3) * box
         }
-        // we don't remove the tail
+        // we don't remove the tail (calda)
     } else {
-        // remove the tail
+        // remove the tail (calda da cobra)
         snake.pop();
     }
 
@@ -142,6 +142,6 @@ function draw() {
     ctx.fillText(score, 2 * box, 1.6 * box);
 }
 
-// call draw function every 100 ms
+// call draw function every 100 ms (milissegundos)
 
 let game = setInterval(draw, 100);
